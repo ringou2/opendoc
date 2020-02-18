@@ -8,6 +8,6 @@ CMD echo -e "Docker docs are viewable at:\nhttp://0.0.0.0:4000"; exec nginx -g '
 #wget https://docs.mongodb.com/v4.2/manual.tar.gz
 
 
-RUN wget https://docs.mongodb.com/v4.2/manual.tar.gz  \n
-tar -xzf manual.tar.gz -C /usr/share/nginx/ --strip-components 1  \n
-rm -f manual.tar.gz ;
+RUN wget https://docs.mongodb.com/v4.2/manual.tar.gz  \ 
+   |tar -xzf manual.tar.gz -C /usr/share/nginx/ --strip-components 1  \ 
+    rm -f manual.tar.gz ;
